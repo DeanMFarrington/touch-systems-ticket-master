@@ -1,0 +1,45 @@
+$minWidthMobileLandscape: 576px;
+$minWidthTablet: 768px;
+$minWidthLaptop: 992px;
+$minWidthDesktop: 1200px;
+
+@mixin mobileLandscape {
+    @media (min-width: #{$minWidthMobileLandscape}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$minWidthTablet}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: #{$minWidthLaptop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$minWidthDesktop}) {
+        @content;
+    }
+}
+
+@mixin onHover {
+    &:hover {
+        cursor: pointer;
+        background-color: $colour-hover !important;
+
+        div {
+            cursor: pointer;
+            background-color: $colour-hover !important;
+        }
+    }
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}

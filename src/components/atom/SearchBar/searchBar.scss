@@ -1,0 +1,32 @@
+@import "../../../shared/colours.scss";
+@import "../../../shared/mediaQuery.scss";
+
+.searchBar {
+    min-width: 100%;
+    background-color: $colour-lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .input {
+        min-width: 100% !important;
+
+        @include tablet {
+            min-width: 20rem !important;
+        }
+
+        @include desktop {
+            min-width: 32rem !important;
+        }
+    }
+}
+
+.searchButton {
+    top: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem !important;
+
+    @include tablet {
+        margin-left: 0.5rem !important;
+    }
+}

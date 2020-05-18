@@ -1,0 +1,12 @@
+@import "../../../shared/colours.scss";
+@import "../../../shared/mediaQuery.scss";
+
+.header {
+    color: $colour-blue;
+    font-size: 1.5rem;
+
+    @include mobileLandscape {
+        font-size: 3rem;
+        margin: 0 0.5rem;
+    }
+}

@@ -1,0 +1,47 @@
+@import "../../../shared/colours.scss";
+@import "../../../shared/mediaQuery.scss";
+
+.gridItem {
+    @include flexColumn;
+    flex: 0 100%;
+    margin: 0.25rem;
+
+    @include mobileLandscape {
+        flex: 0 calc(100% / 2 - 0.5rem);
+    }
+
+    @include tablet {
+        flex: 0 calc(100% / 3 - 0.5rem);
+    }
+
+    @include desktop {
+        flex: 0 calc(100% / 6 - 0.5rem);
+    }
+
+    div {
+        display: flex;
+    }
+
+    .itemHeader {
+        font-size: 1rem;
+        font-weight: 600;
+        background: $colour-lightblue;
+        padding: 0.2rem 0.25rem;
+    }
+
+    .itemParagraph {
+        background: $colour-lightgrey;
+    }
+
+    .itemPhoto {
+        width: 100%;
+    }
+}
+
+.gridItem:nth-child(odd) > .itemHeader {
+    background: $colour-darkblue;
+}
+
+.clickable {
+    @include onHover();
+}
