@@ -1,0 +1,11 @@
+To build the project:
+npm start
+
+Info:
+The API Key I used for Ticket Master can be found
+in 'src/shared/variables.tsx'. 
+
+In this file you will also see a 'developmentMode'
+boolean to switch it to using local data rather
+than making API calls. This data can be found
+in 'src/shared/exampleData.tsx'.
